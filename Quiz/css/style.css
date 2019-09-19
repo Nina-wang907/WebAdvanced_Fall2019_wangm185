@@ -1,0 +1,63 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background:grey;
+}
+
+.box{
+    
+	background:white;
+    margin:10vh auto 20vh;
+    border-top:3vh solid rgb(24, 3, 99);
+    text-align:center;
+  	padding:50px 0 110px;
+    width:80%;
+
+}
+
+.prompt{
+        margin-bottom:40px;
+        font-size:4em;
+}
+
+.h1{
+    font-family: 'Fredoka One', cursive;
+
+}
+
+.h3{
+    font-family: 'Fredoka One', cursive;
+}
+
+.grid{
+        width:80%;
+        position:relative;
+        margin-left: 10%; 
+        margin-bottom:5%;
+        display:grid;
+        grid-template-rows: 10vh 10vh 10vh;
+}
+
+.answer{
+    height:5vh;
+    background: rgb(24, 3, 99);
+}
+
+.buttom{
+    background:orange;
+    color:white;
+    border: none;
+    width:20%;
+    height:5vh;
+    position:relative;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Jaldi', sans-serif;
+}
