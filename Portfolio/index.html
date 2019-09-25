@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <title>Nina's Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="assets/js/script.js"></script>	
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+    
 </head>
 <body>
     <header>
         <a id="logo" href="#">Logo</a>
-        
-        <div class="topnav" id="desktop">
-            <a href="#">Contect</a>
-            <a href="#">Work</a>
-            <a href="#">About</a>
-            
+
+        <div id="sideNav" class="Nav">
+            <span id="closeIcon" onclick="closeNav()">&times;</span>
         </div>
 
         <div class="topnav" id="mobile">
-            <a href="#">Menu</a>
+            <span class="hamberguer" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div class="topnav" id="desktop">
+            <span><a href="#">Contect</a></span>
+            <span><a href="#">Work</a></span>
+            <span><a href="#">About</a></span>
+            
         </div>
 
 

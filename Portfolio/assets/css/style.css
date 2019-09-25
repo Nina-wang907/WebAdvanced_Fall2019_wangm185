@@ -30,20 +30,64 @@ header{
 
 }
 
+#sideNav{
+	width: 0;
+	height: 100vh;
+	z-index: 100;
+	background-color: #233d58;
+	opacity: 0.8;
+	display: block;
+	position: fixed;
+	text-align: center;
+	transition: width 1s; 
+	overflow-x: hidden;
+
+	}
+
+#sideNav.openMenu{
+		width:50vw; 
+	}
+
+#closeIcon{
+    position: absolute;
+    right: 15px;
+    font-size: 50px;
+	margin-left: 30px;
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-family: Roboto;
+
+}
+
+.Nav a{
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	padding: 10px;
+	font-family: Roboto;
+	margin-top: 30px;
+
+}
+
 .topnav {
 	overflow: hidden;
 	margin-top:5vh;
 	background-color: white;
-  }
+}
+
+#mobile{
+	display:none;
+}	
+
+
 
 #desktop{
 	display:block;
 }
-#mobile{
-	display:none;
-}
 
-.topnav a {
+.topnav a{
 	float: right;
 	display: block;
 	color:black;
@@ -148,6 +192,9 @@ header{
 	#project2{
 		background:#6da7bf;
 		border-color: #6da7bf;
+	}
+	#sideNav.openMenu{
+		width:50vw;
 	}
 
 }
