@@ -1,0 +1,37 @@
+{
+    "data":[
+        {"project":"ID",
+            "project-ifo":[
+                {"url":"",
+                "image":"assets/materials/ps1.jpg",
+                "title":"Ocean Playmat",
+                "description":"A movable playmat for children over two years old."},
+                {"url":"",
+                "image":"assets/materials/ps1.jpg",
+                "title":"Vary Chair",
+                "description":"Adjustable Storage Chair"},
+                {"url":"",
+                "image":"assets/materials/ps1.jpg",
+                "title":"Entrance Rack",
+                "description":"A custom rack set for entrance includes Clothes Rack, Shoes Rack and Umbrella Rack."},
+                {"url":"",
+                "image":"assets/materials/ps1.jpg",
+                "title":"Vignelli Coat",
+                "description":"A simple coach coat for long travel in three different styles."},
+                {"url":"",
+                "image":"assets/materials/ps1.jpg",
+                "title":"Giobagnara",
+                "description":"Projects I participated that allow showing during the internship"},
+                {"url":"",
+                "image":"assets/materials/ps1.jpg",
+                "title":"NEXCOO",
+                "description":"NEXCOO is a device designed for children that is used for fun, exploration, and security. The goal is to create the new smart location tracker for kids."}
+            ]
+        }
+        
+    ]
+}
+
+
+ 
+ 

@@ -3,6 +3,8 @@ window.addEventListener("DOMContentLoaded",function(){
     addLinks(Nav);
 
     scrollAnimation();
+
+    loadData();
 });
 
 function openNav(){
@@ -35,3 +37,20 @@ function scrollAnimation(){
         });
 }
 
+function loadData(){
+    $.getJSON("../../mydata.json",function(data){
+
+        console.log(data);
+
+        generateWebsites(data);
+    });
+}
+
+function generateWebsites(data){
+    let source = $("#load").html();
+    let template = Handlebars.compile(source);
+    let result = template(data);
+    let list = $(".contain");
+
+    list.append(result);
+}
