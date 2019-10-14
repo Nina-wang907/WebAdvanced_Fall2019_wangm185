@@ -1,7 +1,7 @@
 {
     "data":[
         {"project":"ID",
-            "project-ifo":[
+            "projectifo":[
                 {"url":"",
                 "image":"assets/materials/ps1.jpg",
                 "title":"Ocean Playmat",
