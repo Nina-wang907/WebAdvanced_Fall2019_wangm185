@@ -1,0 +1,25 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #a7c5dc;
+}
+
+.pokemon-container {
+    top: 10%;
+    width: 100%;
+    position: absolute;
+}
+
+.typename{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: white;
+    margin: 10px;
+
+}
+
+
