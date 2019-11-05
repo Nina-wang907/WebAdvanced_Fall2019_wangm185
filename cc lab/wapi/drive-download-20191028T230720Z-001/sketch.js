@@ -3,8 +3,8 @@ let input, button, question,weatherapi,giphy;
 // let weatherKey = 'a2045704d8d3df7142c4ef4767f0ea79';
 let temperature;
 function setup() {
-  
-  
+
+
   // my canvas
   createCanvas(710, 400);
 
@@ -21,46 +21,45 @@ function setup() {
   textAlign(LEFT);
   textSize(30);
 
-  // text('temperature',50, 50);  
+  // fill(0);
   // textSize(30);
   // text('temperature',50, 50);
-  
+
 }
 
 function submit() {
   const name = input.value();
   question.html(name);
   input.value('');
-  
+
   //load api
-  weatherapi = 'http://api.openweathermap.org/data/2.5/weather?q='+ name +'&APPID=73962bde0d925863f7ca222fea191521';
+  weatherapi = 'http://api.openweathermap.org/data/2.5/weather?q='+ name +'&APPID=abb9f47a6652d704fa7497fa4c1b2fdd';
   giphy = 'https://api.giphy.com/v1/gifs/search?api_key=yoDDEGsANBX6RP9K89G4WjwqXY9t5e4H&q='+name+'&limit=25&offset=0&rating=G&lang=en';
-  
-  
+
+
   console.log(giphy);
   console.log(weatherapi);
-  
+
   loadJSON(giphy,gotGif);
   loadJSON(weatherapi,gotData);
 
-  
+
 }
 
 
 function gotGif(img){
-  console.log(img.data[3].images.original.url);
+  // console.log(img.data[3].images.original.url);
   createImg(img.data[3].images.original.url);
-  
+
 }
 
 function gotData(weather){
-
+  background(255);
   temperature = weather.main.temp;
-  fill(0);
-  textSize(30);
-  text('temperature is'+' '+temperature ,80, 150);
+  console.log(temperature);
+  text('temperature is' ,300, 50);
+  text(temperature,300, 100);
 
-  
 }
 
 // function draw(){
