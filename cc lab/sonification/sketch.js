@@ -6,7 +6,7 @@ let synth;
 let loop;
 let cymbal;
 let melody;
-let counter = 0;
+
 var stars = [];
 let pm25data;
 
@@ -16,9 +16,6 @@ function setup() {
   cymbal = new Tone.MetalSynth().toMaster();
   melody=new Tone.PluckSynth();
   
-  loop = new Tone. Loop(playSound,'4n');
-  loop.start();
-  Tone.Transport.start();
   // synth.triggerAttackRelease('C4','2n');
   for (var i = 0; i < 1000; i++) {
 		stars[i] = new Star();
@@ -27,7 +24,7 @@ function setup() {
 }
 
 function gotData(data){
-  // console.log(data);
+  console.log(data);
   pm25data = data;
 
 }
@@ -61,33 +58,13 @@ class Star {
 function mousePressed() {
   // console.log(synthstar);
   // console.log(time);
-  var value = pm25data.rows[0][index][1].arr[5];
-  background(220);
+  var value = pm25data.rows[0][0][index].arr[5];
+
   console.log(value);
-  index+=1;
 
+  // let m = map(value,300,405,200,800);
   
-  loop.stop();
-
-  let m = map(value,300,405,200,800);
-  
-  synth.triggerAttackRelease('c4','4n');
-  
+  // synth.triggerAttackRelease('c4','4n');
+  // index+=1 
 }
 
-  
-function playSound(){
-  // if(counter%2==0){
-  synth.triggerAttackRelease(synthstar[index],time[index]);
-  // }
-  
-//   if(counter%4==0){
-//   cymbal.triggerAttackRelease('C4','4n');
-//   }
-
-  
-  // console.log(counter);
-  // counter = (counter+1)%16;
-  index+=1;
-
-}
