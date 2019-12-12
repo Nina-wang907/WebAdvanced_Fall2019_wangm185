@@ -36,7 +36,7 @@ function scrollAnimation(){
 }
 
 function loadData(){
-    $.getJSON("../../mydata.json",function(data){
+    $.getJSON("../mydata.json",function(data){
 
         console.log(data);
 
