@@ -1,0 +1,25 @@
+.myModal{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    background-color: rgb(0,0,0,0.9);
+    top:0;
+    left: 0;
+    z-index:2;
+}
+
+.Container{
+    background-color: #233d58;
+    width: 60vw;
+    margin-left: 20vw;
+    height:80vh;
+    margin-top: 15vh;
+}
+
+#close{
+    position:absolute;
+    right:20px;
+    top:20px;
+    cursor:pointer;
+    color:white;
+}

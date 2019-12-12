@@ -17,12 +17,12 @@ function closeNav(){
     
 }
 
-// function addLinks(navs){
+function addLinks(navs){
 
-//     navs.innerHTML += "<a href='#'>Contect</a>";
-//     navs.innerHTML += "<a href='#'>Work</a>";
-//     navs.innerHTML += "<a href='#'>About</a>";
-// }
+    navs.innerHTML += "<a href='#'>Contect</a>";
+    navs.innerHTML += "<a href='#'>Work</a>";
+    navs.innerHTML += "<a href='#'>About</a>";
+}
 
 function scrollAnimation(){
     $("a").click(function(){
@@ -36,7 +36,7 @@ function scrollAnimation(){
 }
 
 function loadData(){
-    $.getJSON("../mydata.json",function(data){
+    $.getJSON("../../mydata.json",function(data){
 
         console.log(data);
 
@@ -52,3 +52,5 @@ function generateWebsites(data){
 
     list.append(result);
 }
+
+

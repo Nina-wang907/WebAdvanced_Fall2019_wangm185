@@ -16,7 +16,7 @@ header{
 	position: relative;
 	margin-left:3vw;
 	margin-right:3vw;
-	background-color: white
+	background-color: white;
 }
 
 #logo{
@@ -109,18 +109,15 @@ header{
 }
 
 .contain{
-	margin-right: 3vw;
-	margin-left: 3vw;
-	position: relative;
-	top: 10vh;
-	display:grid;
-	grid-template-columns: auto auto auto auto;
-	grid-template-rows: auto auto auto;
+width:80%;
+height:auto;
+margin-left:10%;
+margin-right:10%;
 }
 
 .box{
-	width: 21.8vw;
-	height: 21vw;
+	width: 40vw;
+	height: 40vw;
 	float: left;
 	text-align: center;
 }
@@ -138,7 +135,25 @@ header{
 	border-color: #6da7bf;
 }
 
+.website-container{
+	width:calc(94%/3);
+	padding:1;
+	float: left;
+}
 
+h2{
+	font-family: Roboto Black;
+	margin:20px 0 20px 0;
+	color:black;
+	font-size:calc(1rem + 1vw);
+}
+
+p{
+	font-family: Roboto Black;
+	margin: 20px 0 20px 0;
+	color: black;
+	font-size: calc(0.2rem + 1vw)
+}
 
 .footer {
 	padding: 2vh;
@@ -159,7 +174,7 @@ header{
 
 /*mobile*/
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 760px){
 	.topnav a {
 		float: none;
 		width: 100%;
@@ -180,10 +195,10 @@ header{
 		width: 84vw;
 		height: 82vw;
 	}
-	#img2{
+	#img1{
 		border-color: #6da7bf;
 	}
-	#project2{
+	#project1{
 		background:#6da7bf;
 		border-color: #6da7bf;
 	}

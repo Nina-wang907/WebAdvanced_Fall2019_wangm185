@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Nina's Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <script type="text/javascript" src="assets/js/script.js"></script>	
-    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
     <script type='text/javascript' src='assets/js/handlebars.js'></script>
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+    
+    
+
     
 </head>
 <body>
@@ -35,19 +37,32 @@
     <div class="middle">
    
         <div class="contain">
-                <script id="load" type="x-handlebars-template">
-                {{#each data}}
-                <div id="img1" class="box"><a href="" target="blank">
-                                <img class="image" src="{{projectifo.image}}"/>
-                        </a></div>
-                        <div id="project1" class="box">
-                            <h4>{{projectifo.title}}</h4>
-                            <p>{{projectifo.description}}</p>
-                        </div>          
-            <!-- <div style="clear:both;"></div> -->
-
-            {{/each}}
-        </script>
+                <script id="website-container" type="x-handlebars-template">
+                        {{#each data}}
+                            <h1>{{project}}</h1> 
+                            
+                            {{#each projectinfo}}
+            
+                                <div class="website-container">
+                                    <a href="{{url}}" target="blank">
+                                        <img class="website-image" src="{{image}}"/>
+                                    </a>
+                                    <h2>{{title}}</h2>
+                                    <p>{{description}}</p>
+            
+            
+                                </div>
+                              
+            
+                            
+                            {{/each}}
+                            <div style="clear:both;"></div>
+            
+                        {{/each}}                 
+            
+            
+                 </script>
+    
 
         </div>
 
@@ -58,8 +73,7 @@
     
 
     <div class="footer"> </div>
-    
-    
+	
 </body>
         
 </html>
